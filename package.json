@@ -1,0 +1,27 @@
+{
+  "name": "peonia",
+  "version": "1.0.0",
+  "description": "Agente inteligente IA",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StivenTC/peonIA.git"
+  },
+  "keywords": [
+    "agente",
+    "inteligente",
+    "ia"
+  ],
+  "author": "Stiven Tovar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StivenTC/peonIA/issues"
+  },
+  "homepage": "https://github.com/StivenTC/peonIA#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
