@@ -1,10 +1,19 @@
 var express = require('express');
-
 var app = express();
 
-app.get('/', function(req, res) {
-    res.send('<h1>Hola mundo</h1>');
-});
+var api = require('./api.js');
+
+var code_private = "324085";
+var turno = 0;
+
+api.getTable()
+    .then(function(response) {
+        turno = response.data.turno;
+        console.log(response.data);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
 
 app.listen(9000);
 
